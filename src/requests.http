@@ -1,0 +1,19 @@
+### Create a new patient
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+
+{
+  "firstName": "Roy",
+  "lastName": "Keane",
+  "gender": "Female",
+  "dateOfBirth": "1990-05-15"
+}
+
+### Get all patients
+GET http://localhost:8080/api/patients
+
+### Get a patient by ID
+GET http://localhost:8080/api/patients/2
+
+### Delete a patient
+DELETE http://localhost:8080/api/patients/2
